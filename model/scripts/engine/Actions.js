@@ -97,7 +97,6 @@ Actions.if_neighbor = {
 		return EditorHelper()
 				.label("もし周りの")
 				.stateSelector(config, "stateID")
-				.actionsUI(config.actions)
 				.label("の数が")
 				.number(config, "num", {
 					integer:true,
@@ -112,6 +111,7 @@ Actions.if_neighbor = {
 					{ name:"exactly と等しい時(=)", value:"=" }
 				],config,"sign")
 				.label(" ")
+				.actionsUI(config.actions)
 				.dom;
 
 	}

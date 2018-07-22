@@ -26,7 +26,7 @@ Editor.create = function(){
 	///// STATES DOM /////
 	//////////////////////
 
-	var title = Editor.createTitle("<span>THINGS</span> WITH RULES");
+	var title = Editor.createTitle("シミュレーションのルール");
 	Editor.dom.appendChild(title);
 
 	Editor.statesDOM = document.createElement("div");
@@ -36,7 +36,7 @@ Editor.create = function(){
 	// Button - Add a state!
 	var addState = document.createElement("div");
 	addState.className = "editor_fancy_button";
-	addState.innerHTML = "<span>+</span>make new thing";
+	addState.innerHTML = "<span>+</span>新しい状態を作る";
 	addState.onclick = function(){
 
 		// New state config
@@ -71,7 +71,7 @@ Editor.create = function(){
 	///// WORLD DOM /////
 	/////////////////////
 
-	var title = Editor.createTitle("THE <span>WORLD</span>");
+	var title = Editor.createTitle("シミュレーションの世界");
 	Editor.dom.appendChild(title);
 
 	Editor.worldDOM = document.createElement("div");
@@ -94,7 +94,7 @@ Editor.create = function(){
 	var undoChanges = document.createElement("div");
 	undoChanges.className = "editor_fancy_button";
 	undoChanges.style.marginBottom = "20px";
-	undoChanges.innerHTML = "<span style='font-size:25px; line-height:40px;'>⟳</span>undo all changes";
+	undoChanges.innerHTML = "<span style='font-size:25px; line-height:40px;'>⟳</span>全部の変更を元に戻すn";
 	undoChanges.onclick = function(){
 		publish("/meta/reset");
 		Model.returnToBackup();
@@ -396,7 +396,7 @@ Editor.createActionAdder = function(actionConfigs, dom){
 
 	// Default: nothing. just a label.
 	keyValues.push({
-		name: "+new",
+		name: "+新規作成",
 		value:""
 	});
 

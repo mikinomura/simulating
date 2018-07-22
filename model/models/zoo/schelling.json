@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "Rodents are slightly biased, but only slightly. Each one thinks: \"If less than half of my neighbors are like me, I'll move somewhere else.\" And though everyone's OK with an equal neighborhood, when you hit [PLAY]... bam.\n\nThis may seem like a depressing outcome, but I took away a more hopeful message: evil systems can still be filled with *good people*. We just gotta be very, very clever, and compassionate, to help them find their goodness.\n\n(This model was made by Nobel Prize-winner, Thomas Schelling)",
+        "description": "げっ歯動物は少しだけ偏った思想を持っています。 こう考えています: \"もし私のような人が周りに半分より少なかったら, 他の場所に移動しよう。\" 皆が平等な世界に賛成だとしても、つまり周りの半分が自分と同じような動物であれば問題ないとしても、、[プレイ]を押したとき、結果はどうなるでしょうか。\n\n少し残念な結果ですが、少しいいメッセージも感じ取れます: 悪いシステムは*良い人々*に囲まれることがある。\n\n(このモデルはノーベル賞をとった, トーマス・シェリングによって考案されました。)",
         "draw": 0,
         "fps": 10
     },
@@ -8,14 +8,14 @@
         {
             "id": 0,
             "icon": "",
-            "name": "empty spot",
+            "name": "空のセル",
             "actions": [],
-            "description": "Nobody's here."
+            "description": "誰もいない。"
         },
         {
             "id": 1,
             "icon": "🐭",
-            "name": "mouse",
+            "name": "ネズミ",
             "actions": [
                 {
                     "sign": "<",
@@ -33,12 +33,12 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "If less than half (4 out of 8 spots) of my neighbors are mice, I'll move somewhere else on the grid."
+            "description": "自分と同じ動物が半分より少ない (4より少ない) とき、他の場所に移る。"
         },
         {
             "id": 2,
             "icon": "🐹",
-            "name": "hamster",
+            "name": "ハムスター",
             "actions": [
                 {
                     "sign": "<",
@@ -56,7 +56,7 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "If less than half (4 out of 8 spots) of my neighbors are hamsters, I'll move somewhere else on the grid."
+            "description": "自分と同じ動物が半分より少ない (4より少ない) とき、他の場所に移る。"
         }
     ],
     "world": {

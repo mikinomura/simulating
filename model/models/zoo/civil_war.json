@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "Seems peaceful & mixed, but is a powder keg. Click around the grid 'til a conflict EXPLODES.\n\n💥: Conflict. A 50/50 chance a cat or dog \"wins\" the spot.\n🐱🐶: Peaceful. If a neighbor gets beaten up, they'll get angry. They gots grievances.\n😾🐺: Angry. If four angry cats surround a dog, they'll attack it. Same for dogs attacking cats.\n\nWhat emerges:\n* Conflict hits a tipping point, and grows in bursts, not smoothly.\n* One angry group emerges, then counter-forces emerge, who might be even more violent.\n* Can result in one group dominating, or a \"stable\" war.",
+        "description": "クリックをして紛争を起こしましょう。\n\n💥: 紛争。それぞれ50％の確率で犬もしくは猫が勝つ。\n🐱🐶: 平和。もし周りで紛争が起きたら、彼らは起こります。\n😾🐺: 怒り。 もし４匹の怒った猫が犬を囲んだら、猫は犬に攻撃します。同じルールで犬は猫に攻撃します。\n\n何が起こるか:\n* 紛争は転換点を迎えるとスムーズに広がらなくなる。\n* 怒りのグループが出現すると、もっと暴力的な敵のグループが現れる。\n* 結果として一つのグループが支配するか、安定した状態となる。",
         "draw": 5,
         "fps": 60
     },
@@ -8,15 +8,15 @@
         {
             "id": 0,
             "icon": "",
-            "name": "empty spot",
-            "description": "Nobody's here.",
+            "name": "空のセル",
+            "description": "誰もいない状態。",
             "actions": []
         },
         {
             "id": 1,
             "icon": "🐱",
-            "name": "cat",
-            "description": "Peaceful, until conflict happens to someone they know. Also, can be attacked by angry dogs.",
+            "name": "猫",
+            "description": "平和な状態。怒った犬に攻撃される。",
             "actions": [
                 {
                     "sign": ">=",
@@ -49,8 +49,8 @@
         {
             "id": 2,
             "icon": "😾",
-            "name": "angry cat",
-            "description": "Has real grievances. Can still be attacked by angry dogs.",
+            "name": "怒った猫",
+            "description": "不満を持っている。怒った犬に攻撃される。",
             "actions": [
                 {
                     "sign": ">=",
@@ -70,8 +70,8 @@
         {
             "id": 3,
             "icon": "🐶",
-            "name": "dog",
-            "description": "Peaceful, until conflict happens to someone they know. Also, can be attacked by angry cats.",
+            "name": "犬",
+            "description": "平和な状態。怒った猫に攻撃される。",
             "actions": [
                 {
                     "sign": ">=",
@@ -104,8 +104,8 @@
         {
             "id": 4,
             "icon": "🐺",
-            "name": "angry dog",
-            "description": "Has real grievances. Can still be attacked by angry cats.",
+            "name": "怒った犬",
+            "description": "不満を持っている。怒った猫に攻撃される。",
             "actions": [
                 {
                     "sign": ">=",
@@ -125,8 +125,8 @@
         {
             "id": 5,
             "icon": "💥",
-            "name": "conflict",
-            "description": "Cats and dogs are equally likely to \"win\" the violent conflict.",
+            "name": "紛争",
+            "description": "犬と猫のどちらかが同じ確率で勝つ。",
             "actions": [
                 {
                     "probability": 0.05,

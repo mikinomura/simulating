@@ -31,7 +31,7 @@ exports.PerformActions = function(agent, actionConfigs){
 // GO_TO_STATE: Simply go to that state
 Actions.go_to_state = {
 	
-	name: "Turn into...",
+	name: "絵文字が変化する、、",
 
 	props: {stateID:0},
 	
@@ -51,7 +51,7 @@ Actions.go_to_state = {
 // IF_NEIGHBOR: If more/less/equal X neighbors are a certain state, do a thing
 Actions.if_neighbor = {
 	
-	name: "If certain number of certain neighbors...",
+	name: "もしある数の絵文字が周りにあったら、、",
 
 	props: {
 		sign: ">=",
@@ -121,7 +121,7 @@ Actions.if_neighbor = {
 // IF_RANDOM: With a X% chance, do a thing
 Actions.if_random = {
 	
-	name: "With a X% chance...",
+	name: "X%の確率で、、",
 
 	props: {
 		probability: 0.01,
@@ -156,7 +156,7 @@ Actions.if_random = {
 // MOVE_TO: Move to a (nearby|global) (state) spot in and leave behind (state) 
 Actions.move_to = {
 	
-	name: "Move to...",
+	name: "、、へ動く",
 
 	props: {
 		space: 0,
@@ -198,14 +198,14 @@ Actions.move_to = {
 	ui: function(config){
 
 		return EditorHelper()
-				.label("Move to ")
 				.selector([
 					{ name:"a neighboring", value:0 },
 					{ name:"any", value:1 }
 				],config,"space")
 				.stateSelector(config, "spotStateID")
-				.label(" spot & leave behind ")
+				.label("へ移動して、")
 				.stateSelector(config, "leaveStateID")
+				.label("を残す")
 				.dom;
 
 	}

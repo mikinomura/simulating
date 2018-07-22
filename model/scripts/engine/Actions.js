@@ -31,7 +31,7 @@ exports.PerformActions = function(agent, actionConfigs){
 // GO_TO_STATE: Simply go to that state
 Actions.go_to_state = {
 	
-	name: "次の絵文字に変わる",
+	name: "Turn into...",
 
 	props: {stateID:0},
 	

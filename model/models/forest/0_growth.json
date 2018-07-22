@@ -10,7 +10,7 @@
         {
             "id": 0,
             "icon": "",
-            "name": "空のセル",
+            "name": "blank",
             "actions": [
                 {
                     "type": "if_random",

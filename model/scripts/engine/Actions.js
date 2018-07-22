@@ -140,13 +140,12 @@ Actions.if_random = {
 	ui: function(config){
 
 		return EditorHelper()
-				.label("With a ")
 				.number(config, "probability", {
 					multiplier:100,
 					min:0, max:100,
 					step:0.1
 				})
-				.label("% chance,")
+				.label("%の確率で,")
 				.actionsUI(config.actions)
 				.dom;
 

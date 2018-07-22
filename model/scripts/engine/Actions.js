@@ -31,7 +31,7 @@ exports.PerformActions = function(agent, actionConfigs){
 // GO_TO_STATE: Simply go to that state
 Actions.go_to_state = {
 	
-	name: "Turn into...",
+	name: "次の絵文字に変わる",
 
 	props: {stateID:0},
 	
@@ -41,7 +41,7 @@ Actions.go_to_state = {
 
 	ui: function(config){
 		return EditorHelper()
-				.label("Turn into ")
+				.label("次の絵文字に変わる ")
 				.stateSelector(config, "stateID")
 				.dom;
 	}
@@ -95,23 +95,23 @@ Actions.if_neighbor = {
 	ui: function(config){
 
 		return EditorHelper()
-				.label("If ")
-				.selector([
-					{ name:"less than (<)", value:"<" },
-					{ name:"up to (≤)", value:"<=" },
-					{ name:"more than (>)", value:">" },
-					{ name:"at least (≥)", value:">=" },
-					{ name:"exactly (=)", value:"=" }
-				],config,"sign")
-				.label(" ")
+				.label("もし周りの")
+				.stateSelector(config, "stateID")
+				.actionsUI(config.actions)
+				.label("の数が")
 				.number(config, "num", {
 					integer:true,
 					min:0, max:8,
 					step:1
 				})
-				.label(" neighbors are ")
-				.stateSelector(config, "stateID")
-				.actionsUI(config.actions)
+				.selector([
+					{ name:"less than より小さい時(<)", value:"<" },
+					{ name:"up to 以下の時(≤)", value:"<=" },
+					{ name:"more than より大きい時 (>)", value:">" },
+					{ name:"at least 以上の時 (≥)", value:">=" },
+					{ name:"exactly と等しい時(=)", value:"=" }
+				],config,"sign")
+				.label(" ")
 				.dom;
 
 	}

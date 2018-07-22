@@ -1,10 +1,8 @@
 {
     "meta": {
-        "description": "このシミュレーションでは自由に全てを変えてみることができます。
-        \n\nまずセルのどこかをクリックして、炎を発生させてみましょう。
-        \n\nその後、この下に続く絵文字とルールを変えてみましょう。",
+        "description": "===== EXPERIMENT =====\n\nThe tree growth rate starts at 0.3%. What happens when you increase it to 1%? 2%? 5%?\n\n(P.S: you can now pause the sim, and choose what you want to \"draw\" on the grid)",
         "draw": 2,
-        "fps": 15
+        "fps": 30
     },
     "states": [
         {
@@ -14,18 +12,17 @@
             "actions": [
                 {
                     "type": "if_random",
-                    "probability": 0.001,
+                    "probability": 0.003,
                     "actions": [
                         {
                             "type": "go_to_state",
-                            "stateID": "1",
+                            "stateID": 1,
                             "actions": []
                         }
                     ]
                 }
             ],
-            "description": "下に書かれているのは、空のセルに対するルールです。自由にルールを変えてみてください。
-            ルールを変えると、左のセルのシミュレーションにすぐに反映されます。試してみましょう。"
+            "description": "Grows trees. (Adjust the growth rate!)"
         },
         {
             "id": 1,
@@ -33,36 +30,44 @@
             "name": "tree",
             "actions": [
                 {
-                    "sign": ">=",
-                    "num": 1,
-                    "stateID": "2",
+                    "type": "if_random",
+                    "probability": 0.0001,
                     "actions": [
                         {
-                            "stateID": "2",
                             "type": "go_to_state",
+                            "stateID": 2,
                             "actions": []
                         }
-                    ],
-                    "type": "if_neighbor"
+                    ]
+                },
+                {
+                    "type": "if_neighbor",
+                    "sign": ">=",
+                    "num": 1,
+                    "stateID": 2,
+                    "actions": [
+                        {
+                            "type": "go_to_state",
+                            "stateID": 2,
+                            "actions": []
+                        }
+                    ]
                 }
             ],
-            "description": "絵文字も変えることができます。 絵文字をクリックして、新しい絵文字を入力してみましょう。 
-            例えば:\n🍀🎄🌵🌴🌿
-            \n\n絵文字の入力方法:\nMac: control+command+space\nを押してパレットを開きます。"
+            "description": "Catches on fire if hit by lightning, or if a neighbor's on fire."
         },
         {
             "id": 2,
             "icon": "🔥",
             "name": "fire",
-            "description": "木と炎の状態を用意しました。 それ以外の状態も作ることができます！下のボタンをクリックして
-            新しい状態とルールを作ってみましょう。",
             "actions": [
                 {
                     "stateID": 0,
                     "type": "go_to_state",
                     "actions": []
                 }
-            ]
+            ],
+            "description": "Burns away."
         }
     ],
     "world": {
@@ -71,11 +76,11 @@
         "proportions": [
             {
                 "stateID": 0,
-                "parts": 90
+                "parts": 100
             },
             {
                 "stateID": 1,
-                "parts": 10
+                "parts": 0
             },
             {
                 "stateID": 2,
@@ -83,8 +88,8 @@
             }
         ],
         "size": {
-            "width": 12,
-            "height": 11
+            "width": 40,
+            "height": 33
         }
     }
 }

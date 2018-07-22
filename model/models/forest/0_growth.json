@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "テスト\n\nClick the grid to start fire, or scroll down to change the art & rules!",
+        "description": "test\n\nClick the grid to start fire, or scroll down to change the art & rules!",
         "draw": 2,
         "fps": 15
     },

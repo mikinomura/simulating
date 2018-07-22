@@ -1,6 +1,7 @@
 {
     "meta": {
-        "description": "test\n\nClick the grid to start fire, or scroll down to change the art & rules!",
+        "description": "このシミュレーションでは、色々な物を自由に変えて試してみることができます。
+        \n\nまずグリッドをクリックして炎を発生させてみましょう。",
         "draw": 2,
         "fps": 15
     },

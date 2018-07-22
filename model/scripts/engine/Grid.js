@@ -293,33 +293,33 @@ Grid.createUI = function(){
 	var config = Model.data.world;
 
 	return EditorHelper()
-			.label("This world is a ")
+			.label("この世界は")
 			.number(config.size, "width", {
 				integer:true,
 				min:5, max:50,
 				step:1,
 				message:"/grid/reinitialize"
 			})
-			.label(" by ")
+			.label(" X ")
 			.number(config.size, "height", {
 				integer:true,
 				min:5, max:50,
 				step:1,
 				message:"/grid/reinitialize"
 			})
-			.label(" grid.")
+			.label("のグリッドでなりたっています。")
 			.label("<br><br>")
-			.label("We start with this ratio of things:<br>")
+			.label("それぞれの初めの状態は、下の比率で構成されます:<br>")
 			.proportions()
 			.label("<br>")
-			.label("And each thing considers ")
+			.label("そしてそれぞれの状態は、")
 			.selector([
-				{ name:"the 4 spots to its sides", value:Grid.NEIGHBORHOOD_NEUMANN },
-				{ name:"the 8 spots to its sides & corners", value:Grid.NEIGHBORHOOD_MOORE }
+				{ name:"側面の隣にある、４つのセル", value:Grid.NEIGHBORHOOD_NEUMANN },
+				{ name:"側面もしくは角にある、８つのセル", value:Grid.NEIGHBORHOOD_MOORE }
 			],config,"neighborhood",{
 				maxWidth: "none"
 			})
-			.label(" to be its neighboring spots.")
+			.label("を周りのセルとして認識します。")
 			.dom;
 
 };

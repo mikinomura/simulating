@@ -343,7 +343,7 @@ THE PLAY CONTROLS
 	margin: 0 5px;
 }
 #play_controls > #play_reset{
-	width:50px;
+	width:80px;
 }
 #play_controls > #play_pause{
 	width:50px;
@@ -373,7 +373,7 @@ THE PLAY CONTROLS
     margin-left: 5px;
 }
 #play_controls[basic]{
-	width: 275px;
+	width: 300px;
 }
 #play_controls[basic] > div.control_speed{
 	display: none;

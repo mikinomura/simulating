@@ -8,7 +8,7 @@
         {
             "id": 0,
             "icon": "",
-            "name": "empty spot",
+            "name": "空のセル",
             "actions": [
                 {
                     "type": "if_random",
@@ -38,7 +38,7 @@
         {
             "id": 1,
             "icon": "🌳",
-            "name": "strong tree",
+            "name": "強い木",
             "actions": [
                 {
                     "sign": ">=",
@@ -72,7 +72,7 @@
         {
             "id": 5,
             "icon": "🌱",
-            "name": "jerk tree",
+            "name": "悪い木",
             "actions": [
                 {
                     "probability": 0.0001,
@@ -117,7 +117,7 @@
         {
             "id": 2,
             "icon": "🔥",
-            "name": "fire",
+            "name": "炎",
             "actions": [
                 {
                     "type": "go_to_state",
@@ -125,12 +125,12 @@
                     "actions": []
                 }
             ],
-            "description": "Burns away."
+            "description": "燃え尽きる。"
         },
         {
             "id": 6,
             "icon": "✂︎",
-            "name": "tree killer",
+            "name": "ツリーキラー",
             "description": "この後は何もおこりません。",
             "actions": []
         }

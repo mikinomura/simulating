@@ -8,7 +8,7 @@
         {
             "id": 0,
             "icon": "",
-            "name": "empty spot",
+            "name": "空のセル",
             "actions": [
                 {
                     "type": "if_random",
@@ -27,7 +27,7 @@
         {
             "id": 1,
             "icon": "🌲",
-            "name": "tree",
+            "name": "木",
             "actions": [
                 {
                     "type": "if_random",
@@ -71,7 +71,7 @@
         {
             "id": 2,
             "icon": "🔥",
-            "name": "fire",
+            "name": "炎",
             "actions": [
                 {
                     "type": "go_to_state",
@@ -84,7 +84,7 @@
         {
             "id": 3,
             "icon": "✂︎",
-            "name": "tree killer",
+            "name": "ツリーキラー",
             "description": "近くの木を切り倒す。",
             "actions": []
         }

@@ -22,7 +22,7 @@
                     ]
                 }
             ],
-            "description": "下に書かれているのが、空のセルの. You can freely change rules, even add new rules, and they'll take effect immediately! Try it out:"
+            "description": "下に書かれているのが、空のセルのルールです。自由にルールを変えてみましょう。ルールを追加することもできますよ。変えたルールはすぐ左のシミュレーションに反映されます。試してみましょう。"
         },
         {
             "id": 1,
@@ -43,13 +43,13 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "You can also change the art! Just click the icon & paste in a new emoji. Here's a few you can copy-paste in:\n🍀🎄🌵🌴🌿\n\nOther ways to get emoji:\nMac: press control+command+space\nOther: copy from Emojipedia.org"
+            "description": "絵文字を変えることもできますよ！アイコンをクリックして、新しい絵文字を入力しましょう。絵文字の例（いずれかの絵文字をコピーして使ってみましょう）:\n🍀🎄🌵🌴🌿\n\nその他の方法\nMac: control+command+spaceをクリック\nそれ以外: Emojipedia.orgからコピーして使う"
         },
         {
             "id": 2,
             "icon": "🔥",
             "name": "fire",
-            "description": "Finally, you can even create new things with rules! The only limit is your\n✨🌟IMAGINATION🌟✨",
+            "description": "最後に、新しい状態を作って、ルールを追加することができます！",
             "actions": [
                 {
                     "stateID": 0,

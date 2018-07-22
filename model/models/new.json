@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "When making your sim, remember the KISS Principle: Keep It Simple, Sucka.\n\nAt the bottom of this sidebar, you can SAVE and SHARE your sim. Have fun! 😘",
+        "description": "自分のオリジナルのシミュレーションを作るときは、'シンプルを保つ'のを忘れないように。楽しみましょう！",
         "draw": 2,
         "fps": 30,
         "play": true
@@ -23,7 +23,7 @@
                     ]
                 }
             ],
-            "description": "Grows trees."
+            "description": "木が増える。（この文をクリックすると編集可能になり、オリジナルのルールに書き換えができます。）"
         },
         {
             "id": 1,
@@ -55,7 +55,7 @@
                     ]
                 }
             ],
-            "description": "Catches on fire if hit by lightning, or if a neighbor's on fire."
+            "description": "落雷がおきる、もしくは周りに火があったら、木に火が燃え移ります。"
         },
         {
             "id": 2,
@@ -68,7 +68,7 @@
                     "actions": []
                 }
             ],
-            "description": "Burns away."
+            "description": "燃え尽きます。"
         }
     ],
     "world": {

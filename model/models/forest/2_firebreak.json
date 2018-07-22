@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "===== EXPERIMENT =====\n\n✂︎ Tree Killers, as their name suggests, kill trees next to them.\n\nClick-and-drag on the grid to draw walls of ✂︎, (walls can be curvy) to divide the world up into a dozen or more sections. (sections can be unequal)\n\nWhen you're done, hit [PLAY]! What happens now? And why?\n\n(P.S: you can now control the sim's speed, or go step-by-step)",
+        "description": "===== 実験 =====\n\n✂︎ ツリーキラーは、名前の通り、隣の木を殺します。\n\nクリック・ドラッグして ✂の壁をグリッドに描いて、シミュレーションの世界を分断しましょう。\n\n終わったら、[PLAY]を押しましょう!何が起こりましたか？どうしてそれが起こったのでしょう？\n\n(追伸: シミュレーションのスピードを調整できます。)",
         "draw": 3,
         "fps": 30
     },
@@ -22,7 +22,7 @@
                     ]
                 }
             ],
-            "description": "Grows trees."
+            "description": "木が成長します。(成長率を調整してみましょう！）"
         },
         {
             "id": 1,
@@ -66,7 +66,7 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "Catches on fire if hit by lightning, or if a neighbor's on fire. If next to a Tree Killer, it gets cut down."
+            "description": "落雷がおきる、もしくは周りに火があったら、木に火が燃え移ります。もしツリーキラーの隣にいたら、木は伐採されます。"
         },
         {
             "id": 2,
@@ -79,13 +79,13 @@
                     "actions": []
                 }
             ],
-            "description": "Burns away."
+            "description": "燃え尽きる。"
         },
         {
             "id": 3,
             "icon": "✂︎",
             "name": "tree killer",
-            "description": "Cuts down trees near it. (this rule is in the Tree section)",
+            "description": "近くの木を切り倒す。",
             "actions": []
         }
     ],

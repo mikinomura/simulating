@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "===== EXPERIMENT #1 =====\n\n[PAUSE] then [RESET] sim.\n\nDraw walls to divide the grid into a dozen or more sections. Again, walls can be curvy & unequal. \n\nHit [PLAY]. What happens? Why?\n\n===== EXPERIMENT #2 =====\n\n[PAUSE] then [RESET] sim. \n\nGive the Empty Spot a new rule: “With a 1% chance, turn into fire.” \n\nHit [PLAY]. What happens? Why?",
+        "description": "===== 実験 #1 =====\n\nポーズボタンを押して、その後リセットボタンを押しましょう。\n\n壁を描いてグリッドを12個以上に分割しましょう。壁は直線に限らず、曲線を描いたり、いびつな形でも大丈夫です。\n\n[PLAY]を押しましょう。何が起こりましたか？どうしてでしょう？\n\n===== 実験 #2 =====\n\n[ポーズ]を押して、[リセット]ボタンを押しましょう。\n\n空のセルに新しいルールを追加します。“１％の確率で、炎に変わる。” \n\n[PLAY]を押しましょう。何が起こりましたか? どうしてでしょう?",
         "draw": 6,
         "fps": 60
     },
@@ -33,7 +33,7 @@
                     "type": "if_random"
                 }
             ],
-            "description": "Grows Strongs & Jerks.\n\n(FOR EXPERIMENT #2: Click the LAST \"+new\" to add this new rule: “With a 1% chance, turn into fire.”)"
+            "description": "強くて悪い木を増やしましょう。\n\n(実験 #2: \"+new\" ボタンを押して新しいルールを追加します。“1% の確率で、炎に変わる”)"
         },
         {
             "id": 1,
@@ -67,7 +67,7 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "Invincible to fire, but can be choked out by Jerks, Also, gets killed by tree-killers."
+            "description": "炎には無敵ですが、悪い木には殺されてしまいます。ツリーキラーにも殺されます。"
         },
         {
             "id": 5,
@@ -112,7 +112,7 @@
                     "type": "if_neighbor"
                 }
             ],
-            "description": "Flammable, and sometimes spontaneously catches on fire. Also, gets killed by tree-killers."
+            "description": "燃えてしまいます。そしてたまに自発的に火がおこります。ツリーキラーに殺されます。"
         },
         {
             "id": 2,
@@ -131,7 +131,7 @@
             "id": 6,
             "icon": "✂︎",
             "name": "tree killer",
-            "description": "I AM THE END, AND THERE SHALL BE NO MERCY.",
+            "description": "この後は何もおこりません。",
             "actions": []
         }
     ],

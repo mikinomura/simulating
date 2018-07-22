@@ -158,7 +158,7 @@ var updateExample = function(example){
 
 	// Link
 	var link = document.createElement("a");
-	link.innerHTML = "open in new tab";
+	link.innerHTML = "新しいタブで開く";
 	link.href = src;
 	link.target = "_blank";
 	dom.appendChild(link);
@@ -170,7 +170,7 @@ var updateExample = function(example){
 
 	// Embed text
 	var embed = document.createElement("span");
-	embed.innerHTML = "embed";
+	embed.innerHTML = "埋め込む";
 	embed.style.cursor = "pointer";
 	embed.onclick = function(){
 		embed.style.cursor = "";

@@ -1,0 +1,95 @@
+Searching 47 files for "% chance"
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/models/forest/3_plants.json:
+    1  {
+    2      "meta": {
+    3:         "description": "===== EXPERIMENT #1 =====\n\n[PAUSE] then [RESET] sim.\n\nDraw walls to divide the grid into a dozen or more sections. Again, walls can be curvy & unequal. \n\nHit [PLAY]. What happens? Why?\n\n===== EXPERIMENT #2 =====\n\n[PAUSE] then [RESET] sim. \n\nGive the Empty Spot a new rule: “With a 1% chance, turn into fire.” \n\nHit [PLAY]. What happens? Why?",
+    4          "draw": 6,
+    5          "fps": 60
+    .
+   34                  }
+   35              ],
+   36:             "description": "Grows Strongs & Jerks.\n\n(FOR EXPERIMENT #2: Click the LAST \"+new\" to add this new rule: “With a 1% chance, turn into fire.”)"
+   37          },
+   38          {
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/scripts/engine/Actions.js:
+  119  };
+  120  
+  121: // IF_RANDOM: With a X% chance, do a thing
+  122  Actions.if_random = {
+  123  	
+  124: 	name: "With a X% chance...",
+  125  
+  126  	props: {
+  ...
+  147  					step:0.1
+  148  				})
+  149: 				.label("% chance,")
+  150  				.actionsUI(config.actions)
+  151  				.dom;
+
+5 matches across 2 files
+
+
+Searching 47 files for "make new thing"
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/scripts/engine/Editor.js:
+   37  	var addState = document.createElement("div");
+   38  	addState.className = "editor_fancy_button";
+   39: 	addState.innerHTML = "<span>+</span>make new thing";
+   40  	addState.onclick = function(){
+   41  
+
+1 match in 1 file
+
+
+Searching 47 files for "open in a new"
+
+/Users/mikinomura/makeschool-tutorials/simulating/scripts/index.js:
+  137  
+  138  HELPING WITH THE SIMS 
+  139: open in a new tab,
+  140  and embedding them
+  141  
+
+1 match in 1 file
+
+
+Searching 47 files for "リセット"
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/index.html:
+   29  			
+   30  			<!-- New Board -->
+   31: 			<div class="control_button" id="play_reset">リセット</div>
+   32  			<div class="control_divider"></div>
+   33  
+
+1 match in 1 file
+
+
+Searching 47 files for "play_reset"
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/index.html:
+   29  			
+   30  			<!-- New Board -->
+   31: 			<div class="control_button" id="play_reset">リセット</div>
+   32  			<div class="control_divider"></div>
+   33  
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/scripts/engine/UI.js:
+   61  
+   62  // RESET 
+   63: var play_reset = document.getElementById("play_reset");
+   64: play_reset.onclick = function(){
+   65  	Grid.reinitialize();
+   66  };
+
+/Users/mikinomura/makeschool-tutorials/simulating/model/styles/model.css:
+  343  	margin: 0 5px;
+  344  }
+  345: #play_controls > #play_reset{
+  346  	width:80px;
+  347  }
+
+5 matches across 3 files

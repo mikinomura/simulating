@@ -173,7 +173,7 @@ THE EDITOR
 }
 #editor .editor_fancy_button{
 	border-radius: 5px;
-	width: 240px;
+	width: 260px;
 	height: 40px;
 	background: #aaa;
 
@@ -356,7 +356,7 @@ THE PLAY CONTROLS
 	background: #444;
 }
 #play_controls > #play_step{
-	width:40px;
+	width:80px;
 }
 #play_controls > #play_draw{
 	width:80px;

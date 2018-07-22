@@ -1,6 +1,6 @@
 {
     "meta": {
-        "description": "Click grid to start an epidemic.\n😌susceptibles can get infected\n😎immunized peeps are one-tenth as likely to get infected\n😰sick peeps can recover or die\n💀dead\n😓recovered, can't get sick again\n\nPublic health officials already use sims to fight epidemics, which means... 😎 SIMS SAVE LIVES.\n\nThis simulation explains:\n* herd immunity\n* herd immunity's tipping point\n* why a virus that's *too* deadly, paradoxically, kills fewer people.",
+        "description": "グリッドをクリックして、伝染病を発生させましょう。\n😌は感染をしてしまいます。\n😎免疫のある人々で、10分の1の確率で感染します。\n😰感染した人々で、そのまま死んでしまうか、回復するかのどちらかです。\n💀死んでしまった人々。\n😓回復して、二度と病気にはかからない人。\n\nこのシミュレーションは下のコンセプトを説明しています:\n* 集団免疫\n* 集団免疫の転換点\n* ウイルスが強すぎて人をあまりにも早く殺してしまうと、死んでしまう人の数が少なくなる理由。",
         "draw": 2,
         "fps": 30
     },
@@ -10,13 +10,13 @@
             "icon": "",
             "id": 0,
             "name": "empty spot",
-            "description": "Nobody's here."
+            "description": "誰もいない。"
         },
         {
             "id": 1,
             "icon": "😌",
-            "name": "susceptible",
-            "description": "Can get infected by sick neighbors.",
+            "name": "感染しやすい人",
+            "description": "感染した人から病気をもらってしまう。",
             "actions": [
                 {
                     "sign": ">=",
@@ -42,8 +42,8 @@
         {
             "id": 3,
             "icon": "😎",
-            "name": "immunized",
-            "description": "One-tenth as likely to get infected by sick neighbors. (vaccines aren't *perfect*, of course)",
+            "name": "免疫のある人",
+            "description": "10分の1の確率でしか病気にかからない。",
             "actions": [
                 {
                     "sign": ">=",
@@ -69,8 +69,8 @@
         {
             "id": 2,
             "icon": "😰",
-            "name": "sick",
-            "description": "Can recover... or die. (change its recovery & fatality rates below!)",
+            "name": "病気の人",
+            "description": "回復できるか、死んでしまう。",
             "actions": [
                 {
                     "probability": 0.03,
@@ -99,15 +99,15 @@
         {
             "id": 4,
             "icon": "💀",
-            "name": "ded",
-            "description": "ded",
+            "name": "死んでしまった人",
+            "description": "死んでしまった人。",
             "actions": []
         },
         {
             "id": 5,
             "icon": "😓",
-            "name": "recovered",
-            "description": "If you recovered and didn't die, your immune system now knows how to beat the disease, so you can't get sick again. \n\n(BTW, this is how vaccines work! They train your immune system with a half-dead virus, a \"punching bag\", instead of the real deal)",
+            "name": "回復した人",
+            "description": "回復したら、免疫のシステムがウイルスと戦う方法を学んだので、二度と病気にはかからない。",
             "actions": []
         }
     ],

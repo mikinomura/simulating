@@ -30,7 +30,7 @@
         {
             "id": 1,
             "icon": "🌲",
-            "name": "tree（木）",
+            "name": "tree",
             "actions": [
                 {
                     "sign": ">=",
